@@ -337,6 +337,54 @@ display: none;
 
 
 @media screen and (max-width: 600px) {
+ 
+  .content2 {
+    position: relative;
+    bottom: auto;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .con2but {
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .btn1,
+  .previousbut1 {
+    position: static;
+    margin: 0;
+    width: 45%;
+  }
+
+  .content3 {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    position: relative;
+    bottom: auto;
+    margin-top: 30px;
+  }
+
+  .btn2,
+  .previousbut2 {
+    position: static;
+    margin: 0;
+    width: 45%;
+    display: inline-block;
+  }
+.tableboxcontainer {
+  overflow-x: auto;
+}
+
+table {
+  min-width: 600px;
+  font-size: 12px;
+}
+
+
 .body{
   font-size: small;
    overflow-y: auto;
