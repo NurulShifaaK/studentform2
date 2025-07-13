@@ -339,6 +339,7 @@ display: none;
 @media screen and (max-width: 600px) {
 .body{
   font-size: small;
+   overflow-y: auto;
 }
 
   .box{
@@ -398,13 +399,20 @@ display: none;
     background-color:   #d2698d;
      
 }
-.content2{
-
-    width: 320px;
-  height: 250px;
-  bottom: 150px;
-
+.content2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 360px;
+  margin-top: 20px;
+  padding: 20px;
+  height: auto;
+  background-color: #ced5e6;
+  border-radius: 16px;
 }
+
 
 
 .con2but{
@@ -459,23 +467,54 @@ left:1px;
      
           
     }  
-.content3{
-    
-    gap: 100px;
-    bottom: 160px;
+    .btn2,
+.previousbut2 {
+  display: block;         
+  width: 100%;           
+  max-width: 200px;
+  margin: 0 auto;
+  font-size: 15px;
 }
-.btn1{
+.form-row {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.form-row label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.inone,
+.inadd,
+.sinput {
+  width: 100%;
+  font-size: 14px;
+}
+
+
+.content3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  bottom: 0;
   margin-top: 20px;
-margin-left: 220px;
 }
 
-.previousbut1{
 
-  margin-top: 20px;
 
-margin-left: 10px;
-
+.previousbut1,
+.btn1 {
+  width: 100%;
+  max-width: 200px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 14px;
 }
+
 }
 
 @media screen and (min-width: 601px) and (max-width: 900px){
@@ -498,9 +537,10 @@ margin-left: 10px;
   font-size: small;
  
 }
+
+
 }
 
 @media screen and (min-width: 768px){
-  
-}
 
+}
